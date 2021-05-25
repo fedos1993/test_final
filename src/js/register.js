@@ -4,9 +4,9 @@ import aaa from './dummy_data/users.json';
 
 
 ////
-console.log(aaa);
 
-fetch('dummy_data/user.json')
+
+fetch(aaa)
   .then(response => response.json())
   .then(obj => {
     console.log(obj);
