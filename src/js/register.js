@@ -1,13 +1,9 @@
 import '../scss/app.scss';
 
-import aaa from './dummy_data/users.json';
+import data from '../dummy_data/users.json';
 
-
-////
-
-
-fetch(aaa)
-  .then(response => response.json())
-  .then(obj => {
+fetch(data)
+  .then((response) => response.json())
+  .then((obj) => {
     console.log(obj);
   })
