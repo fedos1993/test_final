@@ -1,0 +1,36 @@
+.custom-select {
+  position: relative;
+  margin-bottom: 10px;
+  max-width: 300px;
+
+  select {
+    background: #353535;
+    color: #fff;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    appearance: none;
+    font-family: inherit;
+    font-size: 20px;
+    outline: 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+
+    &:focus {
+      border-color: #ffffff;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,15 @@
+.movie {
+
+  &__iframe-title {
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  &__iframe-box {
+    text-align: center;
+
+    iframe {
+      margin-bottom: 30px;
+    }
+  }
+}

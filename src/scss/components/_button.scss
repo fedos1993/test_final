@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid gray;
+  font-family: inherit;
+  font-size: 20px;
+  background: #1f1f1f;
+  padding: 10px 15px;
+  transition: all .3s ease-out;
+  min-width: 100px;
+  text-align: center;
+
+  &--reset {
+    background-color: #c23e3e;
+  }
+
+  &--register {
+    background-color: #1a5437;
+  }
+
+  &:hover {
+    color: #1f1f1f;
+    background: #ffffff;
+  }
+}

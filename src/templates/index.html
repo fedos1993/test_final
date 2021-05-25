@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film gallery</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="visually-hidden">Film gallery</h1>
+      <div class="header__logo-container">
+        <a class="header__logo-link" href="index.html">
+          <img src="../images/content/icons8-главная.svg" alt="logo home" width="60" height="60">
+        </a>
+      </div>
+      <div class="header__user-nav">
+        <span class="header__user-login"></span>
+        <a class="button" href="authorization.html">Sign In/Sign Out</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="spinner">
+      <div class="spinner__inner">
+        <div class="spinner__circle"></div>
+        <div class="spinner__text">Loading...</div>
+      </div>
+    </div>
+    <section class="movies">
+      <div class="container">
+        <form class="movies__select">
+          <label class="movies__select-label" for="sortMovies">Filtres</label>
+          <div class="custom-select">
+            <select name="sort-movies" id="sortMovies">
+              <option value="popularity.desc" selected>By popularity</option>
+              <option value="release_date.desc">By realise date (descending)</option>
+              <option value="release_date.asc">By realise date (ascending)</option>
+              <option value="vote_average.desc">By rating (descending)</option>
+              <option value="vote_average.asc">By rating (ascending)</option>
+            </select>
+          </div>
+      </form>
+        <ul class="movies__list">
+          <li class="movies__item movie-card">
+          </li>
+        </ul>
+      </section>
+      <section class="pagination">
+        <ul class="pagination__list">
+          <li>
+            <button class="pagination__button pagination__button--disabled" id="start">START</button>
+          </li>
+          <li>
+            <button class="pagination__button pagination__button--disabled" id="prev">PREV</button>
+          </li>
+          <li>
+            <button class="pagination__button pagination__button--active" id="current">1</button>
+          </li>
+          <li>
+            <button class="pagination__button" id="next">NEXT</button>
+          </li>
+          <li>
+            <button class="pagination__button" id="end">END</button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

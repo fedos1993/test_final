@@ -1,0 +1,40 @@
+
+body {
+  min-width: 320px;
+  color: #53565A;
+  font-family: 'Roboto', Tahoma, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 140%;
+  background-color: #1f1f1f;
+}
+
+.visually-hidden:not(:focus):not(:active),
+ input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  outline: 0;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

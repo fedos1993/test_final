@@ -1,0 +1,60 @@
+.full-movie-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 30px 0 30px;
+
+  &__header {
+    width: 100%;
+    display: flex;
+  }
+
+  &__poster {
+    width: 45%;
+  }
+
+  &__info-box {
+    width: 55%;
+    padding: 20px 20px 20px 40px;
+  }
+
+  &__title {
+    font-size: 55px;
+    line-height: 140%;
+    font-weight: bold;
+    margin: 0 0 60px 0;
+  }
+
+  &__info {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  &__info-item {
+    list-style: none;
+    font-size: 30px;
+    line-height: 140%;
+    margin-bottom: 30px;
+  }
+
+  &__overview {
+    margin: 30px 0 30px;
+  }
+
+  &__overview-title {
+    font-size: 30px;
+    line-height: 140%;
+    display: block;
+  }
+
+  &__overview-text {
+    line-height: 140%;
+    font-size: 28px;
+    margin: 15px 0 10px;
+  }
+}
+
+
+
